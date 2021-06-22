@@ -1,5 +1,7 @@
-# Boilerplate
+# Thinkmoto Assessment Task 1
 
-After downloading, remove all js files from src-folder!
-# Thinkmoto-task1
-# Thinkmoto-task1
+The first exercise is a slider element which should behave similar to the one on our website (https://thinkmoto.de).
+Important aspects:
+- Pixel-Perfect
+- responsive
+- interaction…
