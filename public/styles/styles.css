@@ -47,10 +47,18 @@ span {
   text-transform: uppercase;
 }
 
-.splide__slide {
+#both__sliders {
   width: '100%vw'!important;
   display: flex;
   flex-direction: row;
+}
+
+#one {
+  width: '55%vw';
+}
+
+#two {
+   width: '45%vw';
 }
 
 .splide__slide img{
