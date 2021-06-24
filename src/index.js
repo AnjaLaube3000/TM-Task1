@@ -1,42 +1,49 @@
 import Splide from '@splidejs/splide'
 
 document.addEventListener( 'DOMContentLoaded', function () {
-  slider_one()
-  slider_two()
+  new Splide('#one', {
+    type:'fade',
+    perPage: 1,
+    // padding:0,
+    // gap: 0,
+    rewind: true,
+    speed: '0.8s',
+    autoplay: true,
+    easing: 'ease',
+    updateOnMove: true,
+    // easing: 'cubic-bezier(.645,.045,.335,1)',
+    // swipeDistanceThreshold: 150,
+    // flickVelocityThreshold: 0.5,
+    // flickPower: 500,
+    // flickMaxPages: 1,
+    arrows: false,
+    pagination: false
+  }).mount().sync(true),
+
+  new Splide ('#two', {
+      type: 'fade',
+      perPage: 1,
+      // padding: 0,
+      // gap: 0,
+      rewind: true,
+      speed: '0.8s',
+      autoplay: true,
+      easing: 'ease',
+      updateOnMove: true,
+      // easing: 'cubic-bezier(.645,.045,.335,1)',
+      // swipeDistanceThreshold: 150,
+      // flickVelocityThreshold: 0.5,
+      // flickPower: 500,
+      // flickMaxPages: 1,
+      arrows: false,
+      pagination: false
+    }).mount().sync(true)
+  // slider_one()
+  // slider_two()
   // global_carousel__ctrl();
 })
 
-function slider_one() {
-  const one = new Splide('#one', {
-    type:'fade',
-    perPage: 1,
-    padding:0,
-    gap: 0,
-    rewind: true,
-    speed: '0.8s',
-    autoplay: true,
-    easing: 'ease',
-    // easing: 'cubic-bezier(.645,.045,.335,1)',
-    arrows: false,
-    pagination: false
-  }).mount().sync(true)
-}
 
-function slider_two() {
-  const one = new Splide('#two', {
-    type: 'fade',
-    perPage: 1,
-    padding: 0,
-    gap: 0,
-    rewind: true,
-    speed: '0.8s',
-    autoplay: true,
-    easing: 'ease',
-    // easing: 'cubic-bezier(.645,.045,.335,1)',
-    arrows: false,
-    pagination: false
-  }).mount()
-}
 
 
 // function global_carousel__ctrl() {
