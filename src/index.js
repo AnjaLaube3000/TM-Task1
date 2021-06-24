@@ -13,15 +13,13 @@ function slider_one() {
     padding:0,
     gap: 0,
     rewind: true,
-    // width: '1000px',
-    height: '500px',
     speed: '0.8s',
     autoplay: true,
     easing: 'ease',
     // easing: 'cubic-bezier(.645,.045,.335,1)',
     arrows: false,
     pagination: false
-  }).mount()
+  }).mount().sync(true)
 }
 
 function slider_two() {
@@ -31,8 +29,6 @@ function slider_two() {
     padding: 0,
     gap: 0,
     rewind: true,
-    // width: '1000px',
-    height: '500px',
     speed: '0.8s',
     autoplay: true,
     easing: 'ease',
