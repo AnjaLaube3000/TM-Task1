@@ -45,6 +45,7 @@ html {
 }
 
 
+
 /* Text Slider */
 #two {
   width: 40vw;
@@ -93,3 +94,74 @@ span {
   text-transform: uppercase;
 }
 
+/* Arrows/ Navigation */
+#one .splide__arrows button {
+  height: 588px;
+  width: 20vw;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+
+#one .splide__arrows button:hover {
+/* // code copied for mousemove js */
+  position: absolute;
+  transform: translate(-50%,-50%);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-image: url('yellow-arrow-right.svg');
+
+/* // original idea */
+  /* background-color: yellow; */
+  /* border: none; */
+  opacity: 1;
+}
+
+#one .splide__arrow--next {
+  display: none;
+}
+
+#two .splide__arrows button {
+  height: 588px;
+  width: 20vw;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+#two .splide__arrows button:hover {
+  background-color: yellow;
+  border: none;
+  opacity: 1;
+  transition: cubic-bezier(.645,.045,.335,1);
+}
+
+#two .splide__arrow--prev {
+  display: none;
+}
+
+
+
+/* copied for mousemove js */
+/* body{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#77dd77;
+}
+
+.splide__arrow{
+  position:absolute;
+  transform:translate(-50%,-50%);
+  height:35px;
+  width:35px;
+  border-radius:50%;
+  border:2px solid black;
+} */

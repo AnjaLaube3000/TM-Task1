@@ -16,7 +16,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
     // flickVelocityThreshold: 0.5,
     // flickPower: 500,
     // flickMaxPages: 1,
-    arrows: false,
+    arrows: true,
+    arrowPath: 'public/images/yellow-arrow-left.svg',
     pagination: false
   }).mount().sync(true),
 
@@ -35,33 +36,26 @@ document.addEventListener( 'DOMContentLoaded', function () {
       // flickVelocityThreshold: 0.5,
       // flickPower: 500,
       // flickMaxPages: 1,
-      arrows: false,
+      arrows: true,
+    arrowPath: 'public/images/yellow-arrow-right.svg',
       pagination: false
     }).mount().sync(true)
-  // slider_one()
-  // slider_two()
-  // global_carousel__ctrl();
+
 })
 
 
+// //event listener for arrows
+let arrow = document.querySelector('button')
+const onMouseMove = (e) => {
+  arrow.style.left = e.pageX + 'px'
+  arrow.style.top = e.pageY + 'px'
+}
+document.addEventListener('mousemove', onMouseMove)
 
 
-// function global_carousel__ctrl() {
-//   var elms = document.getElementsByClassName("splide");
-//   for (var i = 0; i < elms.length; i++) {
-//     new Splide(elms[i], {
-//       perPage: 1,
-//       padding: 0,
-//       gap: 0,
-//       rewind: true,
-//       // width: '1000px',
-//       height: '500px',
-//       speed: '0.8s',
-//       autoplay: true,
-//       easing: 'ease',
-//       // easing: 'cubic-bezier(.645,.045,.335,1)',
-//       arrows: false,
-//       pagination: false
-//     }).mount();
-//   }
+// let circle = document.getElementById('circle');
+// const onMouseMove = (e) => {
+//   circle.style.left = e.pageX + 'px';
+//   circle.style.top = e.pageY + 'px';
 // }
+// document.addEventListener('mousemove', onMouseMove);
